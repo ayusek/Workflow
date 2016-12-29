@@ -1,0 +1,11 @@
+# Local Alias
+alias .='pwd'
+alias ..='cd ..'
+
+# cd to store history of the las visited directories 
+# USAGE : 
+# cd --    to list previous directories
+# cd -i    to go to the ith listed directory 
+if [ -f $HOME/Workflow/bash_extra/cd_history ]; then
+  source  "$HOME/Workflow/bash_extra/cd_history"
+fi
