@@ -21,3 +21,8 @@ Unfortunately I could not find an easy way to install these through comamnd line
 1. [Auto-latex equations](https://chrome.google.com/webstore/detail/auto-latex-equations/iaainhiejkciadlhlodaajgbffkebdog?hl=en-US) - Rich Latex support in google docs
 
 2. [Image Extractor](https://chrome.google.com/webstore/detail/image-extractor/ejihfoemkcdcfhbmbnaeabmfbkamfnng?hl=en) - to extact and download images from google docs
+
+
+#### Resources : 
+Some references which I used for making my workflow : 
+

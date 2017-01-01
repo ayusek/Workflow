@@ -1,5 +1,25 @@
 # Modiying cd function to list previous directory history while using --
-cd_func ()
+
+cd_func (){
+
+   cd_history $@
+   
+   # listing the contents in the directory 
+   if [[ $1 !=  "--" ]]; then
+      NUM_LS_RESULTS=16
+      local dir_size=$(ls | wc -l)
+      if [[ $dir_size -gt  $NUM_LS_RESULTS ]] ; then
+        unbuffer ls -Gct | head -n 4
+        echo "Number of Items : $dir_size"
+      else
+        ls
+      fi
+   fi
+
+  return 0
+}
+
+cd_history ()
  {
    local x2 the_new_dir adir index
    local -i cnt
@@ -47,7 +67,7 @@ cd_func ()
        cnt=cnt-1
      fi
    done
- 
+  
    return 0
  }
  
