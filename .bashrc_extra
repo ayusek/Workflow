@@ -1,0 +1,4 @@
+# Extra additions to your bashrc 
+
+# Increasing the speed of the delete key on Terminal 
+defaults write NSGlobalDomain KeyRepeat -int 1  # 0 is the fastest 
